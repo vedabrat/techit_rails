@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :production do
   gem "pg"
   gem "puma"
-  
+
 end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
