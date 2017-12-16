@@ -6,6 +6,18 @@ Rails.application.routes.draw do
   get 'welcome/pricing'
 
   get 'welcome/index'
+  get 'welcome/grow'
+  get 'welcome/musicClasses'
+  get 'welcome/ticket_handeling'
+  get 'welcome/wine_budgeting'
+  get 'welcome/WIPuns'
+  get 'welcome/sisterSites'
+  get 'welcome/invest'
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
