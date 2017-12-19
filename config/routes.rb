@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'welcome/WIPuns'
   get 'welcome/sisterSites'
   get 'welcome/invest'
+  get 'welcome/peace2'
 
 
 
