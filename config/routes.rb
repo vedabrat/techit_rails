@@ -14,7 +14,6 @@ Rails.application.routes.draw do
   get 'welcome/sisterSites'
   get 'welcome/invest'
   get 'welcome/peace2'
-  get 'welcome/blocticket.pdf'
 
 
 
