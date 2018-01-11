@@ -158,7 +158,7 @@
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
 
-                    <form action="https://getsimpleform.com/messages?form_api_token=67f0a04c90bacd6531179946d149e692" method="post">
+                    <form action="<%= Rails.configuration.simpleformapi[:publishable_key] %>" method="post">
                       <!-- all your input fields here.... -->
                       <!-- <input type='text' name='test' /> -->
                       <!-- <input type='submit' value='Test form' /> -->
