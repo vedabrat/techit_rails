@@ -1,21 +1,22 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
-  get 'welcome/index'
   get 'welcome/about'
-
-  get 'welcome/pricing'
-
-  get 'welcome/index'
   get 'welcome/grow'
+  get 'welcome/ideas'
+  get 'welcome/index'
+  get 'welcome/invest'
   get 'welcome/musicClasses'
+  get 'welcome/peace2'
+  get 'welcome/pricing'
+  get 'welcome/sisterSites'
   get 'welcome/ticket_handeling'
   get 'welcome/wine_budgeting'
   get 'welcome/WIPuns'
-  get 'welcome/sisterSites'
-  get 'welcome/invest'
-  get 'welcome/peace2'
+  get 'charges/new'
+  get 'charges/charges'
+  get 'charges/create'
 
-
+  resources :charges
+  root 'welcome#index'
 
 
 
