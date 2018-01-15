@@ -17,6 +17,11 @@ Rails.application.routes.draw do
   get 'charges/new'
   get 'charges/charges'
   get 'charges/create'
+  get 'charges/coffee'
+  get 'charges/food'
+  get 'charges/gas'
+  get 'charges/room'
+  get 'charges/repair'
 
   resources :charges
   root 'welcome#index'
