@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'welcome/pricing'
   get 'welcome/sisterSites'
   get 'welcome/ticket_handeling'
+  get 'welcome/topgolf'
+  get 'welcome/topgolf_letsdothis'
   get 'welcome/wine_budgeting'
   get 'welcome/WIPuns'
   get 'charges/new'
