@@ -1,0 +1,2 @@
+module NjmjHelper
+end
