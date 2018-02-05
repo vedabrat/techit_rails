@@ -5,9 +5,13 @@ This is the current webpage for www.techitjc.com. Contact [Vedabrat Etwaru] (htt
 Lets get you up and running! :)
 
 git clone git@github.com:vedabrat/techit_rails.git
+
 cd techit_rails
+
 bundle install
+
 rake db:migrate
+
 rails s
 
 optional heroku,
