@@ -1,0 +1,54 @@
+<h1> Stocks to keep an eye on</h1>
+
+<p style="margin-bottom: 0in; line-height: 100%">Started : Feb 9, 2018.<br/>
+  Updated : Feb 9, 2018.
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">
+  <%= link_to "Certain Stocks are recession proof and depression proof.", "https://www.investopedia.com/articles/fundamental-analysis/09/recession-proof-industries.asp" %>
+
+  <br />
+Here's a collected list of stocks we can keep an eye on. <br/>
+Let me know if you want other metrics with stock links or anything relevant.
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+	<form action="https://getsimpleform.com/messages?form_api_token=b83fe0c887136349bbccf84ea8b5656c" method="post">
+	  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">Submit a Stock to watch	</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+	<input type='text' name='Ticker' />
+
+</p>
+	<input type='submit' value='Submit.' />
+</form>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+  Live data for:
+
+<!--  First Stock Teplate-->
+<% stocks = StockQuote::Stock.quote("FSLR") %>
+<div id="stockname"> <%= stocks.t %></div>
+</br>
+Trading at: <%= stocks.l %></br>
+Daily change: <%= stocks.cp %></br>
+Beta <%= stocks.beta %></br>
+
+<!--  Stock Template End -->
+
+
+
+</p>
+
+
+
+
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>

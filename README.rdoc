@@ -1,6 +1,8 @@
 == TechIT Code Base -- In production
 
-This is the current webpage for www.techitjc.com. Contact [Vedabrat Etwaru] (http://techit.herokuapp.com/#contact )if you have questions or would like to use/join this repo.
+This is the current webpage for www.techitjc.com.
+
+Contact [Vedabrat Etwaru](http://techit.herokuapp.com/#contact )if you have questions or would like to use/join this repo.
 
 Lets get you up and running! :)
 
