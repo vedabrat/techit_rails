@@ -46,6 +46,15 @@ Let me know if you want other metrics with stock links or anything relevant.
   Beta <%= stocks.beta %></br>
 
   <!--  Stock Template End -->
+  <!--  First Stock Teplate-->
+
+  <% stocks = StockQuote::Stock.quote("TSLA") %>
+  <%= stocks.t %>  </br>
+  Trading at: <%= stocks.l %></br>
+  Daily change: <%= stocks.cp %></br>
+  Beta <%= stocks.beta %></br>
+
+  <!--  Stock Template End -->
 
 
 
