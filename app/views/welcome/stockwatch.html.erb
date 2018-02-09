@@ -29,15 +29,23 @@ Let me know if you want other metrics with stock links or anything relevant.
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
   Live data for:
 
-<!--  First Stock Teplate-->
-<% stocks = StockQuote::Stock.quote("FSLR") %>
-<div id="stockname"> <%= stocks.t %></div>
-</br>
-Trading at: <%= stocks.l %></br>
-Daily change: <%= stocks.cp %></br>
-Beta <%= stocks.beta %></br>
+  <!--  First Stock Teplate-->
+  <% stocks = StockQuote::Stock.quote("FSLR") %>
+  <%= stocks.t %>  </br>
+  Trading at: <%= stocks.l %></br>
+  Daily change: <%= stocks.cp %></br>
+  Beta <%= stocks.beta %></br>
+</br></br>
+  <!--  Stock Template End -->
+  <!--  First Stock Teplate-->
 
-<!--  Stock Template End -->
+  <% stocks = StockQuote::Stock.quote("VMW") %>
+  <%= stocks.t %>  </br>
+  Trading at: <%= stocks.l %></br>
+  Daily change: <%= stocks.cp %></br>
+  Beta <%= stocks.beta %></br>
+
+  <!--  Stock Template End -->
 
 
 
