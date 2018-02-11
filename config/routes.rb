@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'welcome/musicClasses'
   get 'welcome/njmj'
   get 'welcome/njmj_letsdothis'
-  get 'welcome/peace2'
+  get 'welcome/loan'
   get 'welcome/pricing'
   get 'welcome/mailinglistdnp'
   get 'welcome/sisterSites'
