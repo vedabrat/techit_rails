@@ -1,7 +1,7 @@
 <h1> Stocks to keep an eye on</h1>
 
 <p style="margin-bottom: 0in; line-height: 100%">Started : Feb 9, 2018.<br/>
-  Updated : Feb 9, 2018.
+  Updated : Feb 11, 2018.
 </p>
 <p style="margin-bottom: 0in; line-height: 100%">
   <%= link_to "Certain Stocks are recession proof and depression proof.", "https://www.investopedia.com/articles/fundamental-analysis/09/recession-proof-industries.asp" %>
@@ -28,6 +28,7 @@ Let me know if you want other metrics with stock links or anything relevant.
 </p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
   Live data for:
+</br></br>
 
   <!--  First Stock Teplate-->
   <% stocks = StockQuote::Stock.quote("FSLR") %>
@@ -35,25 +36,30 @@ Let me know if you want other metrics with stock links or anything relevant.
   Trading at: <%= stocks.l %></br>
   Daily change: <%= stocks.cp %></br>
   Beta <%= stocks.beta %></br>
-</br></br>
+  </br></br>
   <!--  Stock Template End -->
   <!--  First Stock Teplate-->
-
   <% stocks = StockQuote::Stock.quote("VMW") %>
   <%= stocks.t %>  </br>
   Trading at: <%= stocks.l %></br>
   Daily change: <%= stocks.cp %></br>
   Beta <%= stocks.beta %></br>
-
+  </br></br>
   <!--  Stock Template End -->
   <!--  First Stock Teplate-->
-
   <% stocks = StockQuote::Stock.quote("TSLA") %>
   <%= stocks.t %>  </br>
   Trading at: <%= stocks.l %></br>
   Daily change: <%= stocks.cp %></br>
   Beta <%= stocks.beta %></br>
-
+  <!--  Stock Template End -->
+  <!--  First Stock Teplate-->
+  <% stocks = StockQuote::Stock.quote("BA") %>
+  <%= stocks.t %>  </br>
+  Trading at: <%= stocks.l %></br>
+  Daily change: <%= stocks.cp %></br>
+  Beta <%= stocks.beta %></br>
+  </br></br>
   <!--  Stock Template End -->
 
 
