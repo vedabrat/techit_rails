@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>TechIT Loans</title>
+	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
+	<meta name="created" content="2017-08-08T20:51:33.494297014"/>
+	<meta name="changed" content="2017-08-09T11:56:05.868587361"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+		td p { margin-bottom: 0in }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" dir="ltr">
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+	<form action="https://getsimpleform.com/messages?form_api_token=d497015b6c7df29874fce90f1113a31e"
+			method="post">
+</p>
+<table width="100%" cellpadding="3" cellspacing="0">
+	<col width="128*">
+	<col width="128*">
+	<tr>
+		<td colspan="2" width="100%" valign="top" style="border: 1px solid #000000; padding: 0.04in">
+			<p align="center">
+				<font size="5" style="font-size: 18pt">
+					<b>Borrower	Information</b>
+				</font>
+			</p>
+		</td>
+	</tr>
+	<div>
+		<span><label>Select Panel Size</label></span>
+		<span>
+			<select name="sizes" id="sizes">
+				<option value="1x1">1x1</option>
+				<option value="2x2">2x2</option>
+				<option value="3x3">3x3</option>
+				<option value="4x4">4x4</option>
+				<option value="5x5">5x5</option>
+				<option value="6x6">6x6</option>
+				<option value="7x7">7x7</option>
+				<option value="8x8">8x8</option>
+				<option value="9x9">9x9</option>
+				<option value="10x10">10x10</option>
+			</select>
+		</span>
+	</div>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><input type="text" id="nametest" name="bi_1" placeholder="Name: eg. John Smith"/>
+			</p>
+		</p>
+		<p id="quoteval"> Your current Quote price</p>
+	<input  type='submit' value='Submit - (only click once)' />
+</form>
+<p onclick="myJsFunction()" value="calquote" >Calculate Quote</p>
+<script type="text/javascript">
+function myJsFunction(){
+// make a function to calculate the quote
+		var totalquotetimeinminutes = 0;
+		var quoteDollarCost = 0;
+		var panelsizeoption = document.getElementById('sizes').value;
+			if (panelsizeoption == "1x1"){
+				totalquotetimeinminutes += 30
+			}
+
+  	console.log (panelsizeoption);
+		document.getElementById('quoteval').innerHTML = String(totalquotetimeinminutes)
+};
+//make a function to change the quoteval tag on the HTML
+
+
+</script>
+
+</body>
+</html>

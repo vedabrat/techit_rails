@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'welcome/njmj'
   get 'welcome/njmj_letsdothis'
   get 'welcome/loan'
+  get 'welcome/loan0'
   get 'welcome/pricing'
   get 'welcome/mailinglistdnp'
   get 'welcome/sisterSites'
