@@ -36,6 +36,9 @@ Rails.application.routes.draw do
   get 'charges/coffee'
   get 'charges/food'
   get 'charges/gas'
+  get 'charges/memberMonRec'
+  get 'charges/memberWeekRec'
+  get 'charges/memberYearRec'
   get 'charges/room'
   get 'charges/repair'
 
