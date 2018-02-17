@@ -21,9 +21,14 @@ Rails.application.routes.draw do
   get 'welcome/wine_budgeting'
   get 'welcome/WIPuns'
 
+  get 'njmj/budderproductionnotes1'
   get 'njmj/notes'
+  get 'njmj/meetingnotes'
+  get 'njmj/membership'
   get 'njmj/meeting1'
   get 'njmj/secretary'
+  get 'njmj/survey'
+
 
   get 'charges/new'
   get 'charges/charges'
