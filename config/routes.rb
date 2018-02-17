@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'welcome/WIPuns'
 
   get 'njmj/budderproductionnotes1'
+  get 'njmj/budderorder'
   get 'njmj/notes'
   get 'njmj/meetingnotes'
   get 'njmj/membership'
