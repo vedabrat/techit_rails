@@ -1,0 +1,82 @@
+<p style="margin-bottom: 0in; line-height: 100%">Budder Order Form</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+	<form action="https://getsimpleform.com/messages?form_api_token=b83fe0c887136349bbccf84ea8b5656c" method="post">
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">Name</p>
+<input type='text' name='name' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Address</p>
+<input type='text' name='address' id='address' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Phone</p>
+<input type='text' name='phone' id='phone' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Email</p>
+<input type='text' name='email' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Date</p>
+<input type='text' name='date' id='date'/><br/>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">Shipping method</p>
+<div id="nextfriday">Today (is supposed to be the coming friday) </div>
+<input type='text' name='shippingMeth' id='shippingMeth' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">Ship by date</p>
+<input type='text' name='shipByDate' id='shipByDate' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">Item	</p>
+<p style="margin-bottom: 0in; line-height: 100%">	1 cup (8oz) THC infused oil</p>
+<input type="radio" id="regular"> Regular strength</input>
+<input type="radio" id="custom"> Custom strength </input>
+
+<p style="margin-bottom: 0in; line-height: 100%">Quantity </p>
+<input type='text' name='quant' id='quant' value="1" /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">	</p>
+<p style="margin-bottom: 0in; line-height: 100%" >THC Strength per cup<br />
+	(78.86 g max, 125 mg min)</p>
+	<input type='text' name='thcStrength' id='thcStrength' value="78.86" />
+	<input type='text' name='gramMag' id='gramMag' value="grams" />
+
+<p style="margin-bottom: 0in; line-height: 100%" onclick="costcalc()">Click here to calculate order total</p>
+<p style="margin-bottom: 0in; line-height: 100%" name="javatext1" id="javatext1"> Your total will appear here	</p>
+
+<p style="margin-bottom: 0in; line-height: 100%">	</p>
+<input type='submit' value='Submit Order' onclick="confirmalert()"/>
+</form>
+<script>
+document.getElementById('nextfriday').innerHTML = "Delivery on the next friday after " + new Date().toJSON().slice(0,10).replace(/-/g,'/') + "(today)";
+document.getElementById('date').value = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+function costcalc(){
+	// cost per gram bush weed = 20$ for a gram
+	var weedCost = 20;
+	// strength of 78.86 g = $1577.2 = cost per gram * (gramMag=="grams")? (gramMag):(gramMag/1000);
+	var strengthCost = document.getElementById('thcStrength').value * ((document.getElementById('gramMag').value=="grams") ? (1):(.001)) * weedCost;
+	// cost per container and packaging = 2$
+	var containerCost = 2;
+	// cost per cup oil = 2$
+	var oilCost = 2;
+	var markup = 1.4;
+	//  markup= 1.4
+	var quantity = document.getElementById('quant').value;
+	// quantity = 1
+	var deliveryCharge = 10;
+	// shipping&handling/delivery = $10
+	var cost = quantity*(strengthCost+containerCost+oilCost)*markup + deliveryCharge
+	// cost = (1577.2 + 2 +2)*1.4 + 10 = 2223.68
+	document.getElementById('javatext1').innerHTML = "your total cost is $" + (Math.round((cost)*100)/100);
+
+};
+
+	function confirmalert(){
+		alert("Your order has been submitted!")
+	}
+
+
+
+</script>
