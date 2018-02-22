@@ -1,24 +1,14 @@
 Rails.application.routes.draw do
 
-
   get 'njmjofficials/pres'
-
   get 'njmjofficials/secretary'
-
   get 'njmjofficials/treasurer'
-
   get 'njmjofficials/vp'
-
   get 'njmjofficials/parlimentarian'
-
   get 'njmjofficials/programming'
-
   get 'njmjofficials/recruit_retain_director'
-
-  get 'njmjofficials/marking_pr'
-
+  get 'njmjofficials/marketing_pr'
   get 'njmjofficials/community_serv_dir'
-
   get 'njmjofficials/historian'
 
   get 'welcome/about'
