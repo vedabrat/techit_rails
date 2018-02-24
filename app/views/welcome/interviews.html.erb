@@ -1,0 +1,39 @@
+
+<h2 class="western">Interviews</h2>
+<form action="https://getsimpleform.com/messages?form_api_token=d497015b6c7df29874fce90f1113a31e"    method="post">
+
+  <p style="margin-bottom: 0in; line-height: 100%">Date	</p>
+  <input type='text' name='date' id='date' />
+
+  <p style="margin-bottom: 0in; line-height: 100%">Company	</p>
+  <input type='text' name='company' id='company' />
+  <p style="margin-bottom: 0in; line-height: 100%">Round		1-5</p>
+  <input type='text' name='round' id='round' />
+  <p style="margin-bottom: 0in; line-height: 100%">Location	</p>
+  <input type='text' name='location' id='location' />
+  <p style="margin-bottom: 0in; line-height: 100%">Type	</p>
+  <input type='text' name='type' id='type' />
+  <p style="margin-bottom: 0in; line-height: 100%">Questions	</p>
+  <input type='text' name='questions' id='questions' />
+  <p style="margin-bottom: 0in; line-height: 100%">Confidence	1..3</p>
+    <input type='text' name='confidence' id='confidence' />
+  <p style="margin-bottom: 0in; line-height: 100%">Interviewer email	</p>
+  <input type='text' name='interviewer_email' id='interviewer_email' />
+  <p style="margin-bottom: 0in; line-height: 100%">Next Steps	</p>
+  <input type='text' name='next_steps' id='next_steps' />
+  <p style="margin-bottom: 0in; line-height: 100%">Notes	</p>
+  <input type='text' name='notes' id='notes' /> <br />
+  <input type='submit' value='Submit Interview Data' onclick="confirmalert()"/>
+</form>
+
+<script type="text/javascript">
+document.getElementById('date').value = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+
+
+	function confirmalert(){
+		alert("Your order has been submitted!")
+	}
+//make a function to change the quoteval tag on the HTML
+
+
+</script>

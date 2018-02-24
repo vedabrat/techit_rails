@@ -1,0 +1,34 @@
+<h1 class="western">Networking</h1>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<form action="https://getsimpleform.com/messages?form_api_token=d497015b6c7df29874fce90f1113a31e"    method="post">
+
+<p style="margin-bottom: 0in; line-height: 100%">Date	</p>
+<input type='text' name='date' id='date' />
+
+<p style="margin-bottom: 0in; line-height: 100%">Event	</p>
+<input type='text' name='event' id='event' />
+<p style="margin-bottom: 0in; line-height: 100%">Event Type	</p>
+<input type='text' name='event_type' id='event_type' />
+<p style="margin-bottom: 0in; line-height: 100%">People/Companies	</p>
+<input type='text' name='people_companies' id='people_companies' />
+<p style="margin-bottom: 0in; line-height: 100%">Followup 	</p>
+<input type='text' name='followup' id='followup' />
+<p style="margin-bottom: 0in; line-height: 100%">Notes	</p>
+<input type='text' name='notes' id='notes' /> <br />
+<input type='submit' value='Submit Networking Detail' onclick="confirmalert()"/>
+</form>
+<script type="text/javascript">
+// make a function to calculate the quote
+
+document.getElementById('date').value = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+
+
+	function confirmalert(){
+		alert("Your order has been submitted!")
+	}
+//make a function to change the quoteval tag on the HTML
+
+
+</script>
