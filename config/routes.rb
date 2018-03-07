@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'charges/new'
+
+  get 'charges/create'
+
   get 'njmjofficials/pres'
   get 'njmjofficials/secretary'
   get 'njmjofficials/treasurer'
@@ -45,9 +49,11 @@ Rails.application.routes.draw do
 
 
   get 'charges/new'
+  get 'charges/budder_ord'
   get 'charges/charges'
   get 'charges/create'
   get 'charges/coffee'
+  get 'charges/donate'
   get 'charges/food'
   get 'charges/gas'
   get 'charges/memberMonRec'

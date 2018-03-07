@@ -1,0 +1,85 @@
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+	<form action="https://getsimpleform.com/messages?form_api_token=b83fe0c887136349bbccf84ea8b5656c" method="post">
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">Name</p>
+<input type='text' name='name' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Address</p>
+<input type='text' name='address' id='address' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Phone</p>
+<input type='text' name='phone' id='phone' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Email</p>
+<input type='text' name='email' /><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Date</p>
+<input type='text' name='date' id='date'/><br/>
+<p style="margin-bottom: 0in; line-height: 100%">Age</p>
+<input type='text' name='date' id='age'/><br/>
+
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+
+
+</div>
+<p style="margin-bottom: 0in; line-height: 100%">	Stick of
+  Cannabutter ( ~110 grams, 375 mg THC OG Kush.)</p>
+  <p style="margin-bottom: 0in; line-height: 100%">	Price : $10.00</p>
+
+  <p style="margin-bottom: 0in; line-height: 100%">Quantity</p>
+  <input type='text' name='quant' id='quant' value=2 /><br/>
+  <p style="margin-bottom: 0in; line-height: 100%">Subtotal</p>
+  <%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+    <div id="error_explanation">
+      <p><%= flash[:error] %></p>
+    </div>
+    <% end %>
+    <label class="amount">
+      <span id="amtdesc">A Monthly Recurring membership for budder : $40</span>
+    </label>
+  </article>
+
+
+  <p style="margin-bottom: 0in; line-height: 100%">Shipping method</p>
+<div id="nextfriday">Today (is supposed to be the coming friday) </div>
+<!-- <input type='text' name='shippingMeth' id='shippingMeth' /><br/> -->
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+
+
+
+
+  <script>
+
+  document.getElementById('nextfriday').innerHTML = "Personal delivery to you the Friday after " + new Date().toJSON().slice(0,10).replace(/-/g,'/');
+  document.getElementById('date').value = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+
+  document.getElementById('amtdesc').innerHTML = document.getElementById('quant').value + " stick(s) of budder : $" + document.getElementById('quant').value*10;
+  var description = document.getElementById('quant').value + " stick(s) of budder" ;
+  function confirmalert(){
+    alert("Your order has been submitted!");
+  }
+  function clicker(){
+    return  document.getElementById('quant').value*1000;
+  }
+</script>
+  <script
+
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Stick(s) of Budder"
+          data-amount="2000"
+          data-locale="auto"
+          >
+
+
+  </script>
+<% end %>
+
+
+
+
+<input type='submit' value='Submit Order' onclick="confirmalert()"/>
+</form>

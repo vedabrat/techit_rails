@@ -14,5 +14,12 @@
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="A $20 donation"
           data-amount="2000"
-          data-locale="auto"></script>
+          data-locale="auto">
+
+          // Close Checkout on page navigation
+          $(window).on('popstate', function() {
+            handler.close();
+          });
+
+  </script>
 <% end %>
