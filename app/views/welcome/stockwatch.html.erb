@@ -20,9 +20,13 @@ Let me know if you want other metrics with stock links or anything relevant.
 </p>
 <p style="margin-bottom: 0in; line-height: 100%">Submit a Stock to watch	</p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
-  <input type='text' name='Ticker' />
-	<input type='text' name='Suggested buy in' />
+  <input type='text' name='Ticker' /><br />
+  Suggested buy in price: <br />
 
+  <input type='text' name='Suggested buy in' /><br />
+  <div id="instancedate" style="{display:none;}">
+	<input type='text' name='Date' id="date"/>
+  <div>
 </p>
 	<input type='submit' value='Submit.' />
 </form>
@@ -85,3 +89,7 @@ Let me know if you want other metrics with stock links or anything relevant.
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
+<script>
+document.getElementById('date').value = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+
+</script>
