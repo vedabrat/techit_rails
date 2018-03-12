@@ -38,6 +38,7 @@ Rails.application.routes.draw do
   get 'welcome/WIPuns'
 
   get 'njmj/budderproductionnotes1'
+  get 'njmj/bus_plan'
   get 'njmj/budderorder'
   get 'njmj/kellykustom'
   get 'njmj/notes'
