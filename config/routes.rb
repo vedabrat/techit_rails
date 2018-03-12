@@ -41,6 +41,7 @@ Rails.application.routes.draw do
   get 'njmj/budderorder'
   get 'njmj/kellykustom'
   get 'njmj/notes'
+  get 'njmj/media_drop'
   get 'njmj/meetingnotes'
   get 'njmj/membership'
   get 'njmj/meeting1'
