@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   get 'welcome/value'
   get 'welcome/wine_budgeting'
   get 'welcome/WIPuns'
+  get 'welcome/your_6_week_dev'
 
   get 'njmj/budderproductionnotes1'
   get 'njmj/bus_plan'
