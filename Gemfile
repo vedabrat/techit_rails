@@ -28,7 +28,6 @@ gem 'rspec-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'figaro'
 gem 'stripe'
 gem 'stock_quote' #for welcome/stockwatch
 
@@ -50,6 +49,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'sqlite3'
   gem 'spring'
+  
   # Access an IRB console on exception pages or by using <%= console %> in views
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end

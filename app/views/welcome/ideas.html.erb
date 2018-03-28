@@ -146,6 +146,16 @@ According to farmer level, they can control/supply more or less of the surroundi
 </p>
 <p style="margin-bottom: 0in; line-height: 100%">1.  create a venmo
 for every currency</p>
+Add a loan module that requires people to pay if they do not deposit money on time.
+A #{loan} with a #{weekly} <u>period</u> at #{rate} with #{=weekly} #{payment_amount} dollars will follow this formula
+current balance on #{loan}.
+$ #{interest} will added if you do not submit payment by #{one_week_from_today}.
+
+Where #loan is determined by any amount, 0-infinity, #weekly is a selector of weekly = 52, monthly=12, daily=356, yearly=1,
+#rate is determined by whatever rate is chosen.
+
+For the weekly formula, #interest = (#{loan}/#{payment_amount}/#{weekly}*#{rate}*#{payment_amount})+#{loan}     
+
 <p style="margin-bottom: 0in; line-height: 100%">	Let users</p>
 <p style="margin-bottom: 0in; line-height: 100%">		create a wallet</p>
 <p style="margin-bottom: 0in; line-height: 100%">		create a register

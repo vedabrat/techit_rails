@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'njmjofficials/historian'
 
   get 'welcome/about'
+  get 'welcome/clicker'
   get 'welcome/grow'
   get 'welcome/ideas'
   get 'welcome/index'

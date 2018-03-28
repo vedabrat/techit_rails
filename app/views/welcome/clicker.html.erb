@@ -1,0 +1,22 @@
+<h1>Welcome#about</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+
+<button id="click" onclick="click_count(1)"> Click me! </button>
+<p id="winner"> IM SOME FUCKIN TEXT </p>
+
+<script>
+var clicks = 0
+var arr_index_increment = 0;
+var reward_array = [4, 9, 14, 21, 28, 36, 45, 54, 65, 76, 70, 78, 88, 98, 109, 120, 131, 142, 154, 208, 179, 192, 204, 218, 231, 244, 258, 271, 290, 388, 333, 357, 384, 411, 440, 470, 499, 530, 562, 743, 785, 828, 871, 916, 963, 1010, 1058, 1107, 1157, 1209, 1261, 1315, 1370, 1425, 1482, 1540, 1599, 1658, 1720, 1711, 1744, 1989, 2277, 2696, 3183, 3794, 4563, 5508, 7744, 15238, 15390, 15557, 15718, 15879, 16042, 16207, 16374, 16539, 16708, 16863, 21215, 26690, 34690, 45830, 130000, 150800, 226000, 273000, 328000] ;
+
+function click_count(num){
+  clicks += num;
+  if (clicks == reward_array[arr_index_increment] ){
+    arr_index_increment += num;
+    document.getElementById('winner').innerHTML = "You win!";
+  }else{
+    document.getElementById('winner').innerHTML = "Try again";
+  }
+}
+
+</script>
