@@ -1,9 +1,14 @@
 == TechIT Code Base -- In production
-
 This is the current webpage for www.techitjc.com.
+The site structure is a proposal forum for ideas and departments that Vedabrat Etwaru designs. It is always under development and never guaranteed to be in a stable working condition. 
 
-Contact [Vedabrat Etwaru](http://techit.herokuapp.com/#contact )if you have questions or would like to use/join this repo.
+Partial projects and thoughts range from financial modeling to displaying new tools and the exploration process with new gems. 
+This is a personal project which has many webpages Contact [Vedabrat Etwaru](http://techit.herokuapp.com/#contact )if you have questions or would like to use/join this repo.
 
+Since i wrote this repo and noone has formed a dependancy on it yet, testing is still in it's junior stages/nonexistant. 
+
+
+ 
 Lets get you up and running! :)
 
 git clone git@github.com:vedabrat/techit_rails.git
@@ -16,7 +21,15 @@ rake db:migrate
 
 rails s
 
-optional heroku,
+--
+from here, localhost:3000 will render the landing page, by which many of the featured sites are in the sistersites link at the bottom of the page. 
+--
+
+this page does run on heroku so you can launch with:
+
+optional heroku
 
 heroku create
 heroku open
+
+
